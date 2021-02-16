@@ -1,45 +1,36 @@
-<h1 align="center">Twitter clone using Next.js and Prisma</h1>
+# Twitter Clone Using Next.js and Prisma
 
-<p align="center">
-  <a href="https://twitter.com/nirmalyaghosh23">
-    <img alt="Twitter: Nirmalya Ghosh" src="https://img.shields.io/twitter/follow/nirmalyaghosh23.svg?style=social" target="_blank" />
-  </a>
-</p>
+A full-stack application, built using [Next.js](https://nextjs.org/) and [Prisma](https://www.prisma.io/), which implements a bare-bones Twitter clone.
 
-> Full-stack application similar to [Twitter](https://twitter.com/) built using [Next.js](https://nextjs.org/) and [Prisma](https://www.prisma.io/).
+## Requirements
 
-## 🏁 Requirements
+* [Node.js](http://nodejs.org/)
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker Compose](https://docs.docker.com/get-docker/)
+* [Yarn](https://classic.yarnpkg.com/en/docs/install/) (optional)
 
-Make sure you have [Docker](https://www.docker.com/) installed on your computer.
+## Installation Steps
 
-## 🚀 Usage
+1. Clone repo
+2. Run `yarn install`
+3. Run `docker-compose up`
+4. Create a `.env` file as described in the article
+5. In the project root run the following commands:
+    - `npx prisma generate`
+    - `npx prisma migrate dev --preview-feature`
+    - `npx prisma db seed --preview-feature`
+6. Run `yarn dev`
+4. Visit <http://localhost:3000> to view the app
 
-1. Run the following command at the root of your project to start the database container:
+## License
 
-```bash
-docker-compose up
-```
+SitePoint's code archives and code examples are licensed under the MIT license.
 
-This will start the [PostgreSQL](https://www.postgresql.org/) database container.
+Copyright © 2021 SitePoint
 
-2. Run the following command at the root of your project to install all the necessary dependencies for our Next.js application:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-```bash
-yarn install
-```
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-3. Run the following command at the root of your project to start the Next.js application:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-```bash
-yarn dev
-```
-
-This will start the Next.js application. Once it's up and running, you can visit [http://localhost:3000/](http://localhost:3000/) to view the Next.js application.
-
-## 🙏 Show your support
-
-Please ⭐️ this repository if this project helped you!
-
-## 📝 License
-
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
